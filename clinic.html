@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
-    <title>Clinic</title>
+    <title>مركز طبي</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -36,121 +36,160 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+
+    <!-- RTL Support -->
+    <style>
+        body.contact {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .text-left {
+            text-align: right !important;
+        }
+
+        .text-sm-center {
+            text-align: center !important;
+        }
+
+        .col-lg-4,
+        .col-lg-8 {
+            float: right;
+        }
+    </style>
 </head>
 
 <body class="contact">
-<!-- Live Style Switcher Starts - demo only -->
 
-</div>
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>مركز <span>طبي</span></h1>
+        <span class="title-bg">مشروعي</span>
+    </section>
+    <!-- Page Title Ends -->
 
-<!-- Live Style Switcher Ends - demo only -->
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
 
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>Medical<span>Center</span></h1>
-    <span class="title-bg">my project</span>
-</section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
-    <div class="container">
-        <!-- <img src="img/20.jpg "width="800px"height="300px" > -->
-
-        <div class="row">
-            <!-- Left Side Starts -->
-            <div class="col-12 col-lg-4" style="background-color:#28A745;">
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Project Overview:</h3>
-                <p class="open-sans-font mb-3">  
-                    The **Medical Center Management System** is designed to enhance the management
-                     of patient records, appointments, doctors, and medical reports through
-                      **a well-structured database built and analyzed using SQL**. The system ensures **
-                      data integrity, security, and easy access to critical medical information**.  
-              
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">System Analysis & Requirement Gathering:</h3>
-                <p class="open-sans-font mb-3">  
-                    - Analyzed **medical center requirements** to develop a database that meets administrative and operational needs.  
-                    <br>- Created **technical diagrams (ERD, Use Case, Sequence Diagrams)** to map out data flow within the system.  
-                    <br>- Defined **functional and non-functional requirements** to ensure system efficiency and reliability.  
-
-                    
-                <ul class="social list-unstyled pt-1 mb-5">
-                    <h4>Technologies Used</h4>
-                    <li >-Database: SQLServer  .
-                    </li>
-                    <li >-Query Optimization: Indexing, Stored Procedures, Views.
-                    </li>
-                    <li>-Security: Role-Based Access Control (RBAC), Data Encryption .  </li>
-                    
-                    <li >-Modeling & Analysis: ERD, UML Diagrams .
-                    </li>
-                </ul>
-            </div>
-            <!-- Left Side Ends -->
-            <!-- Contact Form Starts -->
-            <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="php/process-form.php">
-                    <div class="contactform">
-                        <div class="row">
-                            <div class="col-12 col-4">
-                                 <!-- <img src="img/20.jpg "width="800px"height="300px" > -->
-                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">My Role - Database Designer & System Analyst</h3>
-                    <p class="open-sans-font mb-3">  
-                        1. Database Design & Development (SQL):
-                        <br> - Designed a **relational database (RDBMS)** to support various medical operations using **SQL**.  
-                        <br>- Created **conceptual and relational diagrams (ERD - Entity Relationship Diagram)** to define relationships between entities such as patients, doctors, appointments, and medical records.  
-                        <br>- Applied **constraints** like **Primary Keys & Foreign Keys** to ensure **data integrity**.  
-                        <br>- Optimized **SQL queries** using **Indexing & Query Optimization** for better performance.  
-                        <br>- Implemented **Stored Procedures, Triggers & Views** to automate medical operations and enhance data security.  
-                    <p>
-                        2. System Analysis & Requirement Engineering:
-                        <br>- Analyzed **medical center requirements** to develop a database that meets administrative and operational needs.  
-                        <br>- Created **technical diagrams (ERD, Use Case, Sequence Diagrams)** to map out data flow within the system.  
-                        <br>- Defined **functional and non-functional requirements** to ensure system efficiency and reliability.  
-
+            <div class="row">
+                <!-- Left Side Starts -->
+                <div class="col-12 col-lg-4" style="background-color:#28A745;">
+                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">نبذة عن المشروع:</h3>
+                    <p class="open-sans-font mb-3">
+                        نظام إدارة <strong>المركز الطبي</strong> مصمم لتحسين إدارة سجلات المرضى، المواعيد، الأطباء،
+                        والتقارير الطبية من خلال
+                        <strong>قاعدة بيانات منظمة ومحللة باستخدام SQL</strong>. يضمن النظام <strong>سلامة البيانات،
+                            الأمان، وسهولة الوصول للمعلومات الطبية المهمة</strong>.
                     </p>
- 
- 
-                    </div>
-                            <div class="col-12 col-4">
-                                <br><br>
-                          <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Challenges & Solutions</h3>
-                                <p class="open-sans-font mb-3">  
-                                    - **Managing large data volumes:** Applied **Normalization** techniques to optimize database structure and improve query performance.  
-                                <br>- **Performance Optimization:** Used **Indexing & Query Optimization** to speed up access to medical records.  
-                                <br>- **Data Security:** Implemented **Access Control & Data Encryption** to ensure confidentiality of medical records.  
-            
-                            </div>
-                            
-                            <div class="col-12 col-4">
-                                <br><br>
-                          <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Conclusion</h3>
-                                <p class="open-sans-font mb-3">  
-                                    As a **System Analyst & Database Designer**, I developed **a comprehensive and optimized database** to streamline medical center operations, ensuring **efficient data management, process automation, and secure access to patient information**.  
+
+                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">تحليل النظام وجمع المتطلبات:</h3>
+                    <p class="open-sans-font mb-3">
+                        - تم تحليل متطلبات <strong>المركز الطبي</strong> لتطوير قاعدة بيانات تلبي الاحتياجات الإدارية
+                        والتشغيلية.
+                        <br>- تم إنشاء <strong>مخططات تقنية (ERD، Use Case، Sequence Diagrams)</strong> لتوضيح تدفق
+                        البيانات داخل النظام.
+                        <br>- تم تحديد <strong>المتطلبات الوظيفية وغير الوظيفية</strong> لضمان كفاءة وموثوقية النظام.
+                    </p>
+
+                    <ul class="social list-unstyled pt-1 mb-5">
+                        <h4>التقنيات المستخدمة</h4>
+                        <li>- قاعدة البيانات: SQL Server</li>
+                        <li>- تحسين الاستعلامات: الفهرسة، الإجراءات المخزنة، العروض Views</li>
+                        <li>- الأمان: التحكم بالوصول حسب الدور (RBAC)، تشفير البيانات</li>
+                        <li>- التحليل والنمذجة: ERD، UML</li>
+                    </ul>
+                </div>
+                <!-- Left Side Ends -->
+
+                <!-- Right Side Starts -->
+                <div class="col-12 col-lg-8">
+                    <form class="contactform" method="post" action="php/process-form.php">
+                        <div class="contactform">
+                            <div class="row">
+                                <div class="col-12 col-4">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">دوري - مصمم قاعدة
+                                        البيانات ومحلل النظام</h3>
+                                    <p class="open-sans-font mb-3">
+                                        1. تصميم وتطوير قاعدة البيانات (SQL):
+                                        <br>- تصميم <strong>قاعدة بيانات علائقية (RDBMS)</strong> لدعم العمليات الطبية
+                                        المختلفة باستخدام SQL.
+                                        <br>- إنشاء <strong>مخططات مفاهيمية وعلائقية (ERD)</strong> لتحديد العلاقات بين
+                                        الكيانات مثل المرضى، الأطباء، المواعيد، والسجلات الطبية.
+                                        <br>- تطبيق <strong>القيود</strong> مثل المفاتيح الأساسية والخارجية لضمان
+                                        <strong>سلامة البيانات</strong>.
+                                        <br>- تحسين <strong>استعلامات SQL</strong> باستخدام الفهرسة وتحسين الاستعلامات
+                                        للحصول على أداء أفضل.
+                                        <br>- تنفيذ <strong>الإجراءات المخزنة، المحفزات، والعروض</strong> لأتمتة
+                                        العمليات الطبية وزيادة أمان البيانات.
+                                    </p>
+                                    <p class="open-sans-font mb-3">
+                                        2. تحليل النظام وجمع المتطلبات:
+                                        <br>- تحليل متطلبات <strong>المركز الطبي</strong> لتطوير قاعدة بيانات تلبي
+                                        الاحتياجات الإدارية والتشغيلية.
+                                        <br>- إنشاء <strong>مخططات تقنية (ERD، Use Case، Sequence Diagrams)</strong>
+                                        لتوضيح تدفق البيانات داخل النظام.
+                                        <br>- تحديد <strong>المتطلبات الوظيفية وغير الوظيفية</strong> لضمان كفاءة
+                                        وموثوقية النظام.
+                                    </p>
+                                </div>
+                                <div class="col-12" style="margin-top:10px;">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">روابط وملفات مفيدة</h3>
+                                    <ul class="open-sans-font">
+                                        <li>📁 <strong>مستودع الكود (GitHub):</strong>
+                                            <a href="https://github.com/shukrikendi/Medical-Center-Management-System"
+                                                target="_blank">رابط المستودع</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-4">
+                                    <br><br>
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">التحديات والحلول</h3>
+                                    <p class="open-sans-font mb-3">
+                                        - إدارة كميات كبيرة من البيانات: تم تطبيق تقنيات التطبيع لتحسين هيكل قاعدة
+                                        البيانات وزيادة سرعة الاستعلامات.
+                                        <br>- تحسين الأداء: استخدام الفهرسة والإجراءات المخزنة لتسريع الوصول للسجلات
+                                        الطبية.
+                                        <br>- أمان البيانات: تنفيذ التحكم بالوصول وتشفير البيانات لضمان سرية المعلومات
+                                        الطبية.
+                                    </p>
+                                </div>
+
+                                <div class="col-12 col-4">
+                                    <br><br>
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">الخلاصة</h3>
+                                    <p class="open-sans-font mb-3">
+                                        بصفتي <strong>محلل النظام ومصمم قاعدة البيانات</strong>، قمت بتطوير
+                                        <strong>قاعدة بيانات متكاملة ومحسنة</strong> لتسهيل عمليات المركز الطبي، وضمان
+                                        <strong>إدارة فعّالة للبيانات، أتمتة العمليات، والوصول الآمن للمعلومات</strong>.
+                                    </p>
+                                </div>
 
                             </div>
-                            
                         </div>
-                    </div>
-                </form>
-            </div>
-            <!-- Contact Form Ends -->
-        </div>
-    </div>
+                    </form>
+                </div>
+                <!-- Right Side Ends -->
 
-</section>
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/preloader.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 

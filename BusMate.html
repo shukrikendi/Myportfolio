@@ -1,173 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
-    <title>BusMate</title>
+    <title>BusMate - نظام النقل الجامعي الذكي</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Template Google Fonts -->
-    <link href="../../css.css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="../../css-1.css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <!-- خطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Template CSS Files -->
+    <!-- ملفات CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            direction: rtl;
+            text-align: right;
+        }
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/yellow.css" rel="stylesheet">
+        h1,
+        h3,
+        h4 {
+            color: #ffcc00;
+        }
 
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css">
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css">
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css">
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css">
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css">
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css">
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css">
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css">
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css">
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css">
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css">
+        pre {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            direction: ltr;
+            text-align: left;
+        }
 
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
+        .custom-section {
+            margin-bottom: 40px;
+        }
+
+        .highlight {
+            color: #ffd700;
+        }
+
+        a {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 
-<body class="contact">
-<!-- Live Style Switcher Starts - demo only -->
+<body>
+    <!-- عنوان الصفحة -->
+    <section class="title-section text-center py-5">
+        <h1>مشروع <span class="highlight">BusMate</span></h1>
+        <p class="text-muted">نظام النقل الجامعي الذكي</p>
+    </section>
 
-</div>
-
-<!-- Live Style Switcher Ends - demo only -->
-
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>Bus<span>Mate</span></h1>
-    <span class="title-bg">my project</span>
-</section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
-    <div class="container">
-        <!-- <img src="img/20.jpg "width="800px"height="300px" > -->
-
-        <div class="row">
-            <!-- Left Side Starts -->
-            <div class="col-12 col-lg-4" style="background-color:#28A745;">
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Project Overview:</h3>
-                <p class="open-sans-font mb-3">  
-                    **BusMate** is a " smart university transport service application "
-                    aimed at enhancing students' commuting experience through advanced features such as 
-                    "trip booking, bus tracking, and instant notifications". The system provides a 
-                    "comprehensive transport management solution" that integrates students, drivers, 
-                    university administration, and service providers, thereby "optimizing and improving 
-                    university transport efficiency".
-              
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">System Analysis & Requirement Gathering:</h3>
-                <p class="open-sans-font mb-3">  
-                    - Analyzed **the needs of students, drivers, and university administrators**, collecting requirements to build an intelligent transport system.  
-                <br>- Designed **technical diagrams (ERD, Use Case, Sequence Diagrams)** to define data structures and process flows.  
-                <br>- Applied **Agile Methodology**, working in **Sprints** to ensure efficient and incremental feature development.  
-
-                    
-                <ul class="social list-unstyled pt-1 mb-5">
-                    <h4>Technologies Used</h4>
-                    <li >- Backend: Laravel, PHP, MySQL, Redis, WebSockets  .
-                    </li>
-                    <li >- API Communication: RESTful APIs. 
-                    </li>
-                    <li>- Security: JWT Authentication, Role-Based Access Control,Token-Based Authentication, Encrypted Data Transfer  </li>
-                    <li >- Application: Flutter (Team Member). 
-                    </li>
-                    <li >- Dashboard: html,css,js (Team Member).
-                    </li>
-                </ul>
-            </div>
-            <!-- Left Side Ends -->
-            <!-- Contact Form Starts -->
-            <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="php/process-form.php">
-                    <div class="contactform">
-                        <div class="row">
-                            <div class="col-12 col-4">
-                                 <!-- <img src="img/20.jpg "width="800px"height="300px" > -->
-                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">My Role as a Backend Developer</h3>
-                    <p class="open-sans-font mb-3">  
-                        1. Backend Development :
-                        <br> - Developed **RESTful APIs** using **Laravel** to connect the backend system with **various applications (Mobile App, Dashboard, Driver App)**.  
-                        <br>- Built a **user and role management system** to support **students, drivers, administrative staff, university management, and service providers**.  
-                        <br>- Designed a **trip management system** that enables **adding trips, defining stops, and tracking passenger counts**.  
-                        <br>- Utilized **WebSockets** to update bus locations in real-time and send instant notifications.  
-                        <br>- Optimized **MySQL database** using **Eloquent ORM, Caching (Redis), and Indexing** for high performance.  
-                    <p>
-                        2. System Analysis & Requirement Engineering :
-                        <br>- Analyzed **the needs of students, drivers, and university administrators**, collecting requirements to build an intelligent transport system.  
-                        <br>- Designed **technical diagrams (ERD, Use Case, Sequence Diagrams)** to define data structures and process flows.  
-                        <br>- Applied **Agile Methodology**, working in **Sprints** to ensure efficient and incremental feature development.  
-
-                    </p>
-                    </p>
-                </div>
-                    <div class="contactform">
-                        <div class="row">
-                            <div class="col-12 col-4">
-                                 <!-- <img src="img/20.jpg "width="800px"height="300px" > -->
-                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">BusMate - Smart University Transport System</h3>
-                    <p class="open-sans-font mb-3">  
-                        <br>BusMate** is a comprehensive system that provides smart solutions for university transport management, allowing students to **subscribe to the service, book trips, and track buses** effortlessly. It also enables drivers to **verify student subscriptions via QR Code** and allows university administration to **efficiently manage student data, trips, and bus stops**.  
-
-                        <br>Backend Integration with BusMate :
-                        <br>- Developed **APIs** to facilitate **trip data exchange, subscription management, and real-time bus tracking**.  
-                        <br>- Used **WebSockets & Event-Driven Architecture** to ensure **instant location updates and notifications**.  
-                        <br>- Implemented **Token-Based Authentication & Role-Based Access Control** to ensure **data security and user permissions management**.  
-                       
-                    </p>
-                </div>
-                            <div class="col-12 col-4">
-                                <br><br>
-                          <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Challenges & Solutions</h3>
-                                <p class="open-sans-font mb-3">  
-                                    <br>- **Real-time location tracking integration:** Implemented **WebSockets & Google Maps API** to ensure **accurate bus tracking**.  
-                                    <br>- **Performance optimization:** Applied **Redis Caching & Database Indexing** to accelerate queries and enhance response times.  
-                                    <br>- **Data security:** Implemented **JWT Authentication & Role-Based Access Control** to prevent unauthorized access.  
-                                           
-                                </div>
-                            <div class="col-12 col-4">
-                                <br><br>
-                          <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Conclusion</h3>
-                                <p class="open-sans-font mb-3">  
-                                    <br>As a **Backend Developer & System Analyst**, I have built a **comprehensive university transport management system** that integrates **modern technology and data analysis** to ensure **a seamless and secure commuting experience for students**, while also improving transport efficiency within the university campus.
-   
-                                </div>
-                            
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- Contact Form Ends -->
+    <!-- المحتوى الرئيسي -->
+    <section class="main-content container">
+        <!-- نظرة عامة -->
+        <div class="custom-section">
+            <h3>🔹 نظرة عامة على المشروع</h3>
+            <p>
+                <strong>BusMate</strong> هو نظام ذكي لإدارة النقل الجامعي، يهدف إلى تحسين تجربة تنقل الطلاب داخل الجامعة
+                من خلال تطبيق موحّد يربط بين الطلاب، السائقين، والإدارة الجامعية.
+                يتيح النظام حجز الرحلات، تتبع الباصات في الزمن الحقيقي، واستلام الإشعارات الفورية حول حالة النقل.
+                كما يوفّر للإدارة لوحة تحكم لإدارة البيانات والمستخدمين بكفاءة عالية.
+            </p>
         </div>
-    </div>
 
-</section>
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+        <!-- تحليل النظام والمتطلبات -->
+        <div class="custom-section">
+            <h3>🧩 تحليل النظام وجمع المتطلبات</h3>
+            <p>
+                تم تحليل احتياجات الأطراف المختلفة (الطلاب، السائقون، إدارة الجامعة) عبر مقابلات واستبيانات لتحديد
+                المتطلبات الوظيفية وغير الوظيفية.
+                تم تصميم <strong>المخططات التقنية (ERD، Use Case، Sequence Diagrams)</strong> لتوضيح العلاقات بين
+                الكيانات ومسارات العمل.
+                اعتمدنا منهجية <strong>Agile</strong> لتنفيذ التطوير ضمن <strong>Sprints</strong> قصيرة لضمان سرعة
+                الإنجاز والتحسين المستمر.
+            </p>
+            <p>
+                <strong>🔗 مرفقات:</strong><br>
+                <a href="https://github.com/shukrikendi/University-Transportation-Management-System">رابط مستودع
+                    GitHub</a>
+            </p>
+        </div>
 
+        <!-- التقنيات المستخدمة -->
+        <div class="custom-section">
+            <h3>⚙️ التقنيات المستخدمة</h3>
+            <ul>
+                <li>لغة البرمجة: <strong>PHP / Laravel</strong></li>
+                <li>قواعد البيانات: <strong>MySQL</strong> مع تحسين الأداء باستخدام Redis وIndexing</li>
+                <li>تأمين النظام: <strong>JWT Authentication، Role-Based Access Control</strong></li>
+                <li>نظام الإشعارات اللحظية: <strong>WebSockets</strong></li>
+                <li>تطبيق الهاتف: <strong>Flutter</strong> (تم التعاون مع الفريق في واجهة المستخدم)</li>
+                <li>لوحة التحكم: <strong>HTML، CSS، JavaScript</strong></li>
+            </ul>
+        </div>
+
+        <!-- دوري في المشروع -->
+        <div class="custom-section">
+            <h3>👨‍💻 مهامي في المشروع</h3>
+            <p>
+                بصفتي <strong>مطوّر Backend ومحلل نظم</strong>، قمت بتنفيذ المهام التالية:
+            </p>
+            <ul>
+                <li>تصميم وتطوير واجهات <strong>RESTful API</strong> لربط تطبيق الجوال، لوحة التحكم، وتطبيق السائق.</li>
+                <li>بناء نظام إدارة المستخدمين والصلاحيات (طلاب – سائقين – إدارة – مزودي خدمة).</li>
+                <li>تطوير نظام إدارة الرحلات الذي يتيح إنشاء الرحلات وتحديد المحطات وتتبع عدد الركاب.</li>
+                <li>استخدام <strong>WebSockets</strong> لتحديث مواقع الباصات في الزمن الحقيقي.</li>
+                <li>تحسين أداء قاعدة البيانات عبر <strong>Eloquent ORM</strong> والتخزين المؤقت <strong>Redis</strong>.
+                </li>
+                <li>تطبيق اختبارات وحدات (Unit Tests) لضمان جودة واستقرار النظام.</li>
+                <li>تحليل المتطلبات، تصميم النظام، ورسم المخططات التوضيحية لهيكل البيانات.</li>
+            </ul>
+
+        </div>
+
+        <!-- أمثلة على الاستعلامات -->
+        <div class="custom-section">
+            <h3>🧠 أمثلة على الاستعلامات (Query Examples)</h3>
+
+            <pre>
+$studentRides = Ride::where('bus_id', $busId)
+    ->whereDate('date', now())
+    ->with('student')
+    ->get();
+      </pre>
+            <p>🚍 <strong>الوصف:</strong> استعلام لجلب جميع الطلاب الذين استخدموا باصًا محددًا في يوم معين، ويُستخدم في
+                تقارير الحضور.</p>
+
+            <pre>
+$activeBuses = Bus::where('status', 'active')
+    ->where('last_update', '>=', now()->subMinutes(2))
+    ->count();
+      </pre>
+            <p>🛰️ <strong>الوصف:</strong> استعلام لحساب عدد الباصات النشطة حاليًا (التي تُرسل بيانات الموقع في آخر
+                دقيقتين).</p>
+
+            <pre>
+$tripsToday = Trip::whereDate('created_at', today())
+    ->with('driver', 'bus')
+    ->get();
+      </pre>
+            <p>📊 <strong>الوصف:</strong> استعلام لجلب جميع الرحلات المسجّلة اليوم مع معلومات السائق والباص.</p>
+        </div>
+
+        <!-- التحديات والحلول -->
+        <div class="custom-section">
+            <h3>🚧 التحديات والحلول</h3>
+            <ul>
+                <li><strong>تتبع الموقع في الزمن الحقيقي:</strong> تم استخدام WebSockets وGoogle Maps API لتحقيق دقة
+                    عالية في تتبع الباصات.</li>
+                <li><strong>تحسين الأداء:</strong> اعتماد Redis Caching وIndexing لزيادة سرعة الاستعلامات.</li>
+                <li><strong>أمان البيانات:</strong> تطبيق JWT Authentication ونظام صلاحيات مرن لتأمين البيانات.</li>
+            </ul>
+        </div>
+
+        <!-- الخاتمة -->
+        <div class="custom-section">
+            <h3>🏁 الخاتمة</h3>
+            <p>
+                كوني <strong>مطوّر Backend ومحلل نظم</strong> في مشروع BusMate،
+                قمت بتطوير نظام شامل لإدارة النقل الجامعي يدمج بين الذكاء، المرونة، وسهولة الاستخدام،
+                بهدف تحسين تجربة الطلاب وضمان إدارة فعالة للبنية التحتية للنقل داخل الجامعة.
+            </p>
+        </div>
+
+    </section>
 </body>
 
 </html>

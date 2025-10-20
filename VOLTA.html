@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -36,154 +36,212 @@
 
     <!-- Modernizr JS File -->
     <script src="js/modernizr.custom.js"></script>
+
+    <style>
+        /* قليل من التعديل المحلي ليتلاءم مع العربية دون تغيير الستايل العام */
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .title-section h1 {
+            font-weight: 700;
+        }
+
+        .title-bg {
+            left: auto;
+            right: 10px;
+        }
+
+        /* اجعل الخلفية مناسبة للـ RTL */
+        .open-sans-font {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* تنسيق صناديق الكود */
+        pre {
+            background-color: #1e1e1e;
+            color: #dcdcdc;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body class="contact">
-<!-- Live Style Switcher Starts - demo only -->
 
-</div>
+    <!-- Page Title Starts -->
+    <section class="title-section text-right text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>V<span>olta</span></h1>
+        <span class="title-bg">My Project</span>
+    </section>
+    <!-- Page Title Ends -->
 
-<!-- Live Style Switcher Ends - demo only -->
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+        <div class="container">
 
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>V<span>olta</span></h1>
-    <span class="title-bg">my project</span>
-</section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
-    <div class="container">
-        <!-- <img src="img/projects/photo_2024-09-15_15-03-45.jpg"width="650px"height="400px" style="margin: 0 auto; display: block;"> -->
+            <div class="row">
+                <!-- Left Side Starts -->
+                <div class="col-12 col-lg-4" style="background-color:#28A745; color:white; padding:25px;">
 
-        <div class="row">
-            <!-- Left Side Starts -->
-            <div class="col-12 col-lg-4" style="background-color:#28A745;"  >
-                
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3" ><br>Project Overview:</h3>
-                <p class="open-sans-font mb-3">  
-                    Volta is an ""intelligent solar load management system"" designed to analyze energy consumption and production while efficiently controlling 
-                    household devices. 
-                    <br>The system integrates "both software and hardware components" to connect the backend server
-                    with physical devices such as "inverters, batteries, and smart sockets", enabling "intelligent load management" based on energy availability.  
-                </p>
-                                    
-                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">System Analysis & Requirement Gathering:</h3>
-                <p class="open-sans-font mb-3">  
-                    - Analyzed "client and technical expert requirements" to develop a system that meets the demands of intelligent energy management.  
-                    <br>- Designed "technical diagrams (ERD, Use Case, Sequence Diagrams)"to structure data flow and system processes.  
-                    <br>- Applied "Agile Methodology" during development, following an "iterative sprint-based" approach to ensure continuous improvement and feature enhancements.  
-                    
-                </p>                                    
-                    
-                <ul class="social list-unstyled pt-1 mb-5">
-                    <h4>Technologies Used</h4>
-                    <li >- Backend: Laravel, PHP, MySQL, Redis, WebSockets.
-                    </li>
-                    <li >- API Communication: RESTful APIs, MQTT.
-                    </li>
-                    <li>- Security: sanctum  Authentication, Role-Based Access Control, Encrypted Data Transfer. </li>
-                    <li >- Application: Flutter (Team Member). 
-                    </li>
-                    <li >- Dashboard: html,css,js (Team Member).
-                    </li>
-                    <li >- SLMT Device: C Arduino,UART, RS-485 (Modbus) (Team Member).
-                    </li>
-                </ul>
-            </div>
-            <!-- Left Side Ends -->
-            <!-- Contact Form Starts -->
-            <div class="col-12 col-lg-8" style="padding: 30px;">
-                <form class="contactform" method="post" action="php/process-form.php">
-                    <div class="contactform">
-                        <div class="row">
-                            <div class="col-12 col-4">
-                          <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3"><br>My Role - Backend Developer & System Analyst</h3>
-                      <p class="open-sans-font mb-3">  
-                        1. Backend Development:
-                        <br>- Designed and developed RESTful APIs using Laravel to ensure seamless communication between the backend system and other applications (Dashboard, Mobile Apps, IoT Devices).  
-                        <br>- Built a user and role management system to support Admin, Technical Expert, and Client roles with robust security policies.  
-                        <br>- Developed a smart scheduling system that allows scheduling device operations based on available energy consumption and production forecasts.  
-                        <br>- Integrated WebSockets & Event-Driven Architecture to send real-time alerts when voltage or energy consumption changes occur.  
-                        <br>- Designed and optimized the MySQL database to ensure fast and efficient queries, using Eloquent ORM to manage relationships between tables.  
-                        <br>- Implemented integration with home control devices (SLMT Device) via HTTP & MQTT protocols to send commands and receive live data from solar systems.  
-                        <br>- Built an API Logging & Monitoring Dashboard to monitor system performance and analyze incoming and outgoing requests to and from the system.  
-                        <br>- Designed a **smart scheduling system** that autonomously manages device operations based on available energy consumption.  </p>
-                        2. System Analysis & Requirement Engineering :
-                        <br>- Analyzed **client and technical expert requirements** to develop a system that meets the demands of intelligent energy management.  
-                        <br>- Designed **technical diagrams (ERD, Use Case, Sequence Diagrams)** to structure data flow and system processes.  
-                        <br>- Applied **Agile Methodology** during development, following an **iterative sprint-based** approach to ensure continuous improvement and feature enhancements.  
-                        
-                    </div>
-                    <div class="contactform">
-                        <div class="row">
-                            <div class="col-12 col-4">
-                                 <img src="img/projects/slmt2.png"width="500px"height="300px" >
-                     <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3"><br>SLMT - Smart Load Management Terminal</h3>
-                      <p class="open-sans-font mb-3"> 
-                        is an intelligent control unit that **integrates with the backend system** to collect live energy data 
-                        **(voltage, current, and load consumption)** and execute operational commands.  
-                        <br>
-                        1. Backend Integration with SLMT**  
-                        <br>- Developed **APIs** to allow the terminal to send energy data and receive operational commands such as **turning devices on or off**.  
-                        <br>- Implemented **MQTT & HTTP API** protocols to ensure stable and efficient communication between the terminal and backend system.  
-                        <br>- Applied **Token-Based Authentication** to secure **device communication and control operations**.  
-                        <br></p>
-                        <p>
-                        2. Hardware Communication & Data Processing**  
-                        <br>- Processed incoming data from **inverters and batteries** to determine priority-based energy distribution.  
-                        <br>- Utilized **WebSockets & Event Listeners** to enable instant response to critical events.  
-                        <br>- Implemented algorithms to safeguard devices against **overloading or unsafe voltage drops**.  
-                        <p>
-                        
-                        </p>
-                        </p>
-                        
-                    </div>
-                            <div class="col-12 col-4">
-                                <br><br>
-                                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Challenges & Solutions</h3>
-                                <p class="open-sans-font mb-3">  
-                                    - Integration with Home Devices: Ensuring seamless communication with the SLMT Device required the use of WebSockets & Event Listeners instead of continuous polling.  
-                                    <br>- Efficient Energy Consumption Management: An algorithm was designed to calculate active and expected loads based on live energy data, which helped improve system efficiency.  
-                                    <br>- Performance Optimization and Fast Response Times: Caching (Redis) was used to reduce response times, along with Database Indexing to improve query performance.  
-                                    <br>- Security and Data Protection: Implemented sanctum Authentication and Role-Based Access Control to prevent unauthorized access and ensure system integrity.   
-                                
-                                </p>
-                             </div>
-                            <div class="col-12 col-4">
-                                <br><br>
-                                <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">Conclusion</h3>
-                                <p class="open-sans-font mb-3">  
-                                    As a **Backend Developer & System Analyst**, I contributed to building a **comprehensive solar 
-                                    energy management system** that seamlessly integrates **software and hardware components** 
-                                    to ensure **smart control, real-time responsiveness, and high performance**. This resulted 
-                                    in enhanced **energy distribution efficiency and a secure, user-friendly experience.**
-                                </p>
-                             </div>
-                            
+                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3"><br>نبذة عن المشروع:</h3>
+                    <p class="open-sans-font mb-3" style="color: #fff;">
+                        <strong>Volta</strong> هو نظام ذكي لإدارة الأحمال الشمسية صُمم لتحليل إنتاج واستهلاك الطاقة
+                        والتحكم الفعّال بالأجهزة المنزلية.
+                        <br>يجمع المشروع بين مكونات برمجية ومادية لربط الخادم الخلفي (Backend) بالأجهزة الحقلية مثل
+                        الإنفرترات والبطاريات والمقابس الذكية، مع توفير آليات لإدارة الأحمال بناءً على توافر الطاقة.
+                    </p>
+
+                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">تحليل النظام وجمع المتطلبات:</h3>
+                    <p class="open-sans-font mb-3" style="color: #fff;">
+                        - تحليل متطلبات العميل والمتخصصين التقنيين لتصميم نظام يلبي احتياجات إدارة الطاقة الذكية.
+                        <br>- تصميم المخططات التقنية مثل <strong>ERD, Use Case, Sequence Diagrams</strong> لتنظيم تدفق
+                        البيانات والعمليات.
+                        <br>- العمل بمنهجية <strong>Agile</strong> عبر سبرنتات متكررة لضمان تحسين مستمر وتسليم ميزات
+                        تدريجية.
+                    </p>
+
+                    <ul class="social list-unstyled pt-1 mb-5" style="color: #fff;">
+                        <h4>التقنيات المستخدمة</h4>
+                        <li>- Backend: Laravel, PHP, MySQL, Redis, WebSockets</li>
+                        <li>- تواصل الـ API: RESTful APIs, MQTT</li>
+                        <li>- الأمان: Laravel Sanctum، نظام صلاحيات (RBAC)، نقل مشفّر للبيانات</li>
+                        <li>- تطبيق الموبايل: Flutter (من فريق العمل)</li>
+                        <li>- لوحة الإدارة: HTML, CSS, JS (من فريق العمل)</li>
+                        <li>- جهاز SLMT: C/Arduino، UART، RS-485 (Modbus) (جزء ميداني)</li>
+                    </ul>
+                </div>
+                <!-- Left Side Ends -->
+
+                <!-- Right Side Starts -->
+                <div class="col-12 col-lg-8" style="padding: 30px;">
+                    <form class="contactform" method="post" action="#">
+                        <div class="contactform">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3"><br>دوري – مطور Backend
+                                        ومحلل نظم</h3>
+                                    <p class="open-sans-font mb-3">
+                                        <strong>1. تطوير الواجهة الخلفية (Backend):</strong>
+                                        <br>- تصميم وتطوير واجهات برمجة تطبيقات (RESTful APIs) باستخدام Laravel لربط
+                                        النظام بواجهات الإدارة، التطبيقات، والأجهزة الميدانية.
+                                        <br>- بناء نظام إدارة مستخدمين وأدوار يدعم صلاحيات المدير، الخبير الفني،
+                                        والمستخدم النهائي مع سياسات أمان قوية.
+                                        <br>- تطوير نظام جدولة ذكي يتحكم في تشغيل الأجهزة بناءً على توقعات إنتاج الطاقة
+                                        والاستهلاك.
+                                        <br>- دمج WebSockets وعمارة معتمدة على الأحداث (Event-Driven) لإرسال تنبيهات
+                                        لحظية عند تغيّر الفولت أو الاستهلاك.
+                                        <br>- تصميم وتحسين قاعدة بيانات MySQL لضمان استعلامات سريعة وفعّالة باستخدام
+                                        Eloquent ORM.
+                                        <br>- تنفيذ تكامل مع وحدات التحكم المنزلية (SLMT) عبر بروتوكولات HTTP وMQTT
+                                        لإرسال الأوامر واستقبال البيانات الحية.
+                                        <br>- بناء لوحة مراقبة لتسجيل ومتابعة طلبات الـ API وتحليل أداء النظام.
+                                    </p>
+
+                                    <p class="open-sans-font mb-3">
+                                        <strong>2. هندسة النظام وتحليل المتطلبات:</strong>
+                                        <br>- جمع وتحليل متطلبات العميل والفريق الفني وكتابة مستندات المتطلبات (SRS).
+                                        <br>- تصميم مخططات هندسية (ERD، Use Case، Sequence) لتوضيح بنية البيانات وتدفق
+                                        الأحداث.
+                                        <br>- إعداد حالات اختبار (Test Cases) للتحقق من منطق العمل وصحة الـ APIs في
+                                        مختلف السيناريوهات.
+                                    </p>
+                                </div>
+
+                                <!-- 🧠 قسم أمثلة الاستعلامات -->
+                                <div class="col-12" style="margin-top:25px;">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">🧠 أمثلة على الاستعلامات
+                                        (Query Examples)</h3>
+
+                                    <pre>$averageVoltage = DeviceReading::where('device_id', $id)
+    ->whereBetween('created_at', [$start, $end])
+    ->avg('voltage');</pre>
+                                    <p class="open-sans-font mb-3">
+                                        ⚡ <strong>الوصف:</strong> هذا الاستعلام يُستخدم لحساب متوسط الجهد الكهربائي
+                                        لجهاز معين خلال فترة زمنية محددة،
+                                        ويُستخدم لتوليد تقارير الأداء اليومي في النظام.
+                                    </p>
+
+                                    <pre>$activeDevices = Device::where('status', 'active')
+    ->where('last_update', '>=', now()->subMinutes(5))
+    ->count();</pre>
+                                    <p class="open-sans-font mb-3">
+                                        🔍 <strong>الوصف:</strong> هذا الاستعلام يُستخدم لاحتساب عدد الأجهزة النشطة التي
+                                        ترسل بيانات في آخر 5 دقائق،
+                                        ويساعد في مراقبة الحالة الحية للأجهزة ضمن النظام.
+                                    </p>
+
+                                    <pre>$alerts = Alert::where('type', 'voltage_drop')
+    ->whereDate('created_at', today())
+    ->orderByDesc('created_at')
+    ->take(10)
+    ->get();</pre>
+                                    <p class="open-sans-font mb-3">
+                                        🚨 <strong>الوصف:</strong> هذا الاستعلام يسترجع آخر 10 تنبيهات لانخفاض الجهد في
+                                        اليوم الحالي،
+                                        ويُستخدم في لوحة المراقبة لتحليل الأداء اللحظي للنظام.
+                                    </p>
+                                </div>
+
+                                <div class="col-12" style="margin-top:15px;">
+                                    <img src="img/projects/slmt2.png" width="100%"
+                                        style="border-radius:6px; margin-bottom:15px;" alt="SLMT Device">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3"><br>وحدة SLMT – وحدة
+                                        إدارة الأحمال الذكية</h3>
+                                    <p class="open-sans-font mb-3">
+                                        وحدة التحكم الذكية (SLMT) هي واجهة ميدانية تقوم بجمع بيانات الجهد والتيار
+                                        والاستهلاك وإرسالها إلى الخادم عبر MQTT/HTTP، كما تستقبل أوامر التشغيل/الإيقاف
+                                        لإدارة الأحمال وفق سياسات النظام.
+                                    </p>
+                                </div>
+
+                                <div class="col-12" style="margin-top:10px;">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">روابط وملفات مفيدة</h3>
+                                    <ul class="open-sans-font">
+                                        <li>📁 <strong>مستودع الكود (GitHub):</strong>
+                                            <a href="https://github.com/shukrikendi/SolarLoadManagementSystem"
+                                                target="_blank">رابط المستودع</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-12" style="margin-top:10px;">
+                                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">الخاتمة</h3>
+                                    <p class="open-sans-font mb-3">
+                                        بصفتي مطوراً للواجهة الخلفية ومحللاً للنظم، شاركت في تصميم وتنفيذ نظام كامل يربط
+                                        بين العناصر المادية والبرمجية لتحقيق إدارة طاقة ذكية وآمنة.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <!-- Right Side Ends -->
             </div>
-            <!-- Contact Form Ends -->
         </div>
-    </div>
+    </section>
 
-</section>
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/preloader.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 
