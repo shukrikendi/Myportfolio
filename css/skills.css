@@ -1,0 +1,123 @@
+/* Modular skills styles for dark theme
+   - Responsive grid: 4 cols desktop, 2 tablet, 1 mobile
+   - Circular progress using conic-gradient
+   - Variables for color and size
+*/
+
+:root {
+    --bg-dark-1: #0d0d0d;
+    --bg-dark-2: #121212;
+    --muted: #cfcfcf;
+    --skill-size: 120px;
+    /* Site accent (unified green for skills) */
+    --skill-accent: #00FF88;
+    /* base size, scaled on small screens */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 0 40px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--muted);
+}
+
+.skill-circle {
+    --size: var(--skill-size);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    /* Force a unified accent color (overrides any inline --color values)
+       and use --p (degrees) for the filled portion. Removed CSS masks to
+       avoid clipping child content (the percentage text). */
+    --color: var(--skill-accent) !important;
+    background: conic-gradient(var(--color) 0deg, var(--color) calc(var(--p) * 1deg), rgba(255, 255, 255, 0.04) calc(var(--p) * 1deg));
+    /* Ensure the inner text is not clipped */
+    overflow: visible;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.5) inset, 0 6px 18px rgba(0, 0, 0, 0.6);
+    transition: transform .35s ease, box-shadow .25s ease;
+}
+
+.skill-circle::before {
+    content: '';
+    position: absolute;
+    inset: calc(var(--size) * 0.12);
+    border-radius: 50%;
+    /* Inner circle that creates the 'hole' effect for the ring. Keep it
+       behind the text by using a lower z-index than .skill-value. */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.12));
+    z-index: 2;
+}
+
+.skill-circle .skill-value {
+    position: relative;
+    z-index: 3;
+    /* higher than ::before so text is always on top */
+    /* Centered numeric label inside the circle */
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.skill-circle:hover {
+    transform: translateY(-6px) scale(1.03);
+    /* subtle green glow on hover to match unified accent */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 0 6px rgba(0, 255, 136, 0.06);
+}
+
+/* Responsive rules */
+@media (max-width: 1199px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    :root {
+        --skill-size: 110px
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    :root {
+        --skill-size: 96px
+    }
+}
+
+/* Accessibility: ensure contrast and focus outline */
+.skill-circle:focus {
+    outline: 3px solid rgba(0, 255, 136, 0.18);
+    outline-offset: 4px
+}
+
+/* Small helper to keep headings tidy */
+.skill-card h6 {
+    color: #ddd;
+    font-size: 0.9rem;
+    margin: 8px 0 0
+}

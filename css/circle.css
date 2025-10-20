@@ -30,7 +30,7 @@
     font-size: 80px;
 }
 
-.c100 > span {
+.c100>span {
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -158,7 +158,7 @@
 }
 
 /* Hover effects */
-.c100:hover > span {
+.c100:hover>span {
     width: 3.33em;
     line-height: 3.33em;
     font-size: 0.3em;
@@ -175,7 +175,7 @@
     border-color: #c6ff00 !important;
 }
 
-.c100.dark > span {
+.c100.dark>span {
     color: #777777;
 }
 
@@ -183,7 +183,7 @@
     background-color: #666666;
 }
 
-.c100.dark:hover > span {
+.c100.dark:hover>span {
     color: #c6ff00;
 }
 
@@ -193,7 +193,7 @@
     border-color: #4db53c !important;
 }
 
-.c100.green:hover > span {
+.c100.green:hover>span {
     color: #4db53c;
 }
 
@@ -202,7 +202,7 @@
     border-color: #5fd400 !important;
 }
 
-.c100.green.dark:hover > span {
+.c100.green.dark:hover>span {
     color: #5fd400;
 }
 
@@ -212,7 +212,7 @@
     border-color: #dd9d22 !important;
 }
 
-.c100.orange:hover > span {
+.c100.orange:hover>span {
     color: #dd9d22;
 }
 
@@ -221,6 +221,6 @@
     border-color: #e08833 !important;
 }
 
-.c100.orange.dark:hover > span {
+.c100.orange.dark:hover>span {
     color: #e08833;
-} 
+}
