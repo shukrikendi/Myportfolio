@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
-    <link href="../../css.css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="../../css-1.css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Template CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- CSS Skin File -->
     <link href="css/skins/yellow.css" rel="stylesheet">
@@ -40,113 +42,147 @@
 
 <body class="portfolio">
 
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <li class="icon-box active">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-    </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
-</header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>my <span>portfolio</span></h1>
-    <span class="title-bg">works</span>
-</section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content text-center revealator-slideup revealator-once revealator-delay1">
-    <div id="grid-gallery" class="container grid-gallery">
-        <!-- Portfolio Grid Starts -->
-        <section class="grid-wrap">
-            <ul class="row grid">
-                <!-- Portfolio Item Starts -->
-                <li>
-                    <figure>
-                        <a href="VOLTA.html">
-                        <img src="img/projects/solar.png" alt="Portolio Image">
-                        <div><span>VOLTA <br>(Solar Load Management System) <br><br>more details</span></div>
-                    </figure>
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
                 </a>
-                </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
-                <li>
-                    <figure>
-                        <a href="BusMate.html">     
-                        <img src="img/projects/Bus Mate.png" alt="Portolio Image">
-                        <div><span>Bus Mate    <br><br> more details</span></div>
-                    </figure></a>
-                </li>
-                <!-- Portfolio Item Ends -->
-                <!-- Portfolio Item Starts -->
-                <li>
-                    <figure>  <a href="clinic.html">  
-                        <img src="img/projects/clinic.png" alt="Portolio Image">
-                        <div><span>Medical Center Management System <br><br> more details</span></div>
-                    </figure></a>  
-                </li>
-                <!-- Portfolio Item Ends -->
-               
-            </ul>
-        </section>
-        
-    </div>
-</section>
-<!-- Main Content Ends -->
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+            <li class="icon-box active">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li class="active"><a href="portfolio.html"><i
+                                class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>my <span>portfolio</span></h1>
+        <span class="title-bg">works</span>
+    </section>
+    <!-- Page Title Ends -->
+    <!-- Main Content Starts -->
+    <section class="main-content text-center revealator-slideup revealator-once revealator-delay1">
+        <div class="container projects-container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- VOLTA -->
+                <article class="project-card revealator-slideup revealator-once" data-aos="fade-up">
+                    <a class="project-image" href="VOLTA.html">
+                        <img src="img/projects/solar.png" alt="VOLTA - Solar Load Management">
+                    </a>
+                    <div class="project-body">
+                        <h3 class="project-title">VOLTA</h3>
+                        <p class="project-desc">Smart solar energy management platform integrating hardware and backend
+                            APIs to optimize home energy usage.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Restful Api</span>
+                            <span class="tech-badge">MQTT</span>
+                            <span class="tech-badge">WebSockets</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn-view" href="VOLTA.html">View Details</a>
+                        </div>
+                    </div>
+                </article>
 
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<!-- <script src="js/preloader.min.js"></script> -->
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+                <!-- Bus Mate -->
+                <article class="project-card revealator-slideup revealator-once" data-aos="fade-up" data-aos-delay="80">
+                    <a class="project-image" href="BusMate.html">
+                        <img src="img/projects/Bus Mate.png" alt="Bus Mate - University Transportation">
+                    </a>
+                    <div class="project-body">
+                        <h3 class="project-title">Bus Mate</h3>
+                        <p class="project-desc">A platform for managing bus routes, tracking, and real-time
+                            notifications for students and admins.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Google Maps API</span>
+                            <span class="tech-badge">Restful Api</span>
+
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn-view" href="BusMate.html">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Medical Center -->
+                <article class="project-card revealator-slideup revealator-once" data-aos="fade-up"
+                    data-aos-delay="160">
+                    <a class="project-image" href="clinic.html">
+                        <img src="img/projects/clinic.png" alt="Medical Center Management System">
+                    </a>
+                    <div class="project-body">
+                        <h3 class="project-title">Medical Center Management System</h3>
+                        <p class="project-desc">A digital system for managing appointments, records, and operations for
+                            healthcare centers.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">SQL Server</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn-view" href="clinic.html">View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <!-- Main Content Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <!-- <script src="js/preloader.min.js"></script> -->
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
 
 </body>
 

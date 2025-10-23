@@ -1,10 +1,10 @@
-(function($) {
+(function ($) {
 
 	"use strict";
 
 	/* ----------------------------------------------------------- */
 	/*  FUNCTION TO STOP LOCAL AND YOUTUBE VIDEOS IN SLIDESHOW
-    /* ----------------------------------------------------------- */
+	/* ----------------------------------------------------------- */
 
 	function stop_videos() {
 		var video = document.getElementById("video");
@@ -14,11 +14,11 @@
 		$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	}
 
-	$(document).ready(function() {
+	$(document).ready(function () {
 
 		/* ----------------------------------------------------------- */
 		/*  STOP VIDEOS
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
 		$('.slideshow nav span').on('click', function () {
 			stop_videos();
@@ -26,39 +26,43 @@
 
 		/* ----------------------------------------------------------- */
 		/*  FIX REVEALATOR ISSUE AFTER PAGE LOADED
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
 		$(".revealator-delay1").addClass('no-transform');
 
 		/* ----------------------------------------------------------- */
 		/*  PORTFOLIO GALLERY
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
-		if ($('.grid').length) {
-			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		// Initialize the legacy CBPGridGallery only when the expected DOM exists (preserves backward compatibility)
+		if ($('.grid').length && document.getElementById('grid-gallery')) {
+			new CBPGridGallery(document.getElementById('grid-gallery'));
 		}
 
 		/* ----------------------------------------------------------- */
 		/*  HIDE HEADER WHEN PORTFOLIO SLIDESHOW OPENED
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
-		$(".grid figure").on('click', function() {
-			$("#navbar-collapse-toggle").addClass('hide-header');
-		});
+		// Only bind hide-header when the legacy grid exists
+		if ($('.grid').length) {
+			$(".grid figure").on('click', function () {
+				$("#navbar-collapse-toggle").addClass('hide-header');
+			});
+		}
 
 		/* ----------------------------------------------------------- */
 		/*  SHOW HEADER WHEN PORTFOLIO SLIDESHOW CLOSED
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
-		$(".nav-close").on('click', function() {
+		$(".nav-close").on('click', function () {
 			$("#navbar-collapse-toggle").removeClass('hide-header');
 		});
-		$(".nav-prev").on('click', function() {
+		$(".nav-prev").on('click', function () {
 			if ($('.slideshow ul li:first-child').hasClass('current')) {
 				$("#navbar-collapse-toggle").removeClass('hide-header');
 			}
 		});
-		$(".nav-next").on('click', function() {
+		$(".nav-next").on('click', function () {
 			if ($('.slideshow ul li:last-child').hasClass('current')) {
 				$("#navbar-collapse-toggle").removeClass('hide-header');
 			}
@@ -66,19 +70,22 @@
 
 		/* ----------------------------------------------------------- */
 		/*  PORTFOLIO DIRECTION AWARE HOVER EFFECT
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
-		var item = $(".grid li figure");
-		var elementsLength = item.length;
-		for (var i = 0; i < elementsLength; i++) {
-			$(item[i]).hoverdir();
+		// Only initialize hoverdir on legacy grid items if present
+		if ($('.grid li figure').length) {
+			var item = $(".grid li figure");
+			var elementsLength = item.length;
+			for (var i = 0; i < elementsLength; i++) {
+				$(item[i]).hoverdir();
+			}
 		}
 
 		/* ----------------------------------------------------------- */
 		/*  AJAX CONTACT FORM
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 
-		$(".contactform").on("submit", function() {
+		$(".contactform").on("submit", function () {
 			$(".output_message").text("Sending...");
 
 			var form = $(this);
@@ -86,7 +93,7 @@
 				url: form.attr("action"),
 				method: form.attr("method"),
 				data: form.serialize(),
-				success: function(result) {
+				success: function (result) {
 					if (result == "success") {
 						$(".form-inputs").css("display", "none");
 						$(".box p").css("display", "none");
@@ -106,11 +113,11 @@
 
 	});
 
-	$(document).keyup(function(e) {
+	$(document).keyup(function (e) {
 
 		/* ----------------------------------------------------------- */
 		/*  KEYBOARD NAVIGATION IN PORTFOLIO SLIDESHOW
-        /* ----------------------------------------------------------- */
+		/* ----------------------------------------------------------- */
 		if (e.keyCode === 27) {
 			stop_videos();
 			$('.close-content').click();
